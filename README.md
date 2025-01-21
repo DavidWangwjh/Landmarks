@@ -1,2 +1,2 @@
 # Landmarks
-This is an iOS app built following this tutorial https://developer.apple.com/tutorials/swiftui
+This is an iOS app built using the tutorial available at https://developer.apple.com/tutorials/swiftui
