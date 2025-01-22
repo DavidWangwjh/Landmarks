@@ -18,13 +18,14 @@ extension AnyTransition {
 
 struct HikeView: View {
     var hike: Hike
-    @State private var showDetail = true
+    @State private var showDetail = false
 
     var body: some View {
         VStack {
             HStack {
                 HikeGraph(hike: hike, path: \.elevation)
                     .frame(width: 50, height: 30)
+                    .padding(.trailing, 5)
 
                 VStack(alignment: .leading) {
                     Text(hike.name)
@@ -47,6 +48,7 @@ struct HikeView: View {
                         .padding()
                 }
             }
+            .padding(.bottom, 10)
 
             if showDetail {
                 HikeDetail(hike: hike)
